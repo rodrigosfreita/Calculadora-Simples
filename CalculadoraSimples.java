@@ -1,10 +1,7 @@
-package aula9_Metodos.CalculadoraSimples;
+package metodos.CalculadoraSimples;
 
 import java.util.Scanner;
 
-/**
- * 
- * @author Fernando
  * 
  * Calculadora Simples
  * 
