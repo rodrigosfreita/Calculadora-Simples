@@ -1,53 +1,54 @@
-package metodos.CalculadoraSimples;
+package Methods.SimpleCalculator;
 
 import java.util.Scanner;
 
+/**
  * 
- * Calculadora Simples
+ * Simple Calculator
  * 
- * Métodos Operacionais
- * - somar(float n1, float n2): float
- * - subtrair()
- * - multiplicar()
- * - dividir()
+ * Operational Methods
+ * - add(float n1, float n2): float
+ * - subtract()
+ * - multiply()
+ * - divide()
  *
  */
 
-public class CalculadoraSimples {
-	
-	private Scanner input;
-	
-	public int menu() {
-		input = new Scanner(System.in);
-		System.out.println("*-* MENU *-*");
-		System.out.println("1 - Adição");
-		System.out.println("2 - Subtração");
-		System.out.println("3 - Multiplicação");
-		System.out.println("4 - Divisão");
-		System.out.println("Operação: ");
-		int op = input.nextInt();
-		return op;
-		
-	}
-	
-	public float somar(float n1, float n2) {
-		System.out.println("*-* SOMAR *-*");
-		float resultado = n1+n2;
-		return resultado;
-	}
-	
-	public float subtrair(float n1, float n2) {
-		System.out.println("*-* SUBTRAIR *-*");
-		return n1-n2;
-	}
-	
-	public float multiplicar(float n1, float n2) {
-		System.out.println("*-* MULTIPLICAR *-*");
-		return n1*n2;
-	}
-	
-	public float dividir(float n1, float n2) {
-		System.out.println("*-* DIVIDIR *-*");
-		return n1/n2;
-	}
+public class SimpleCalculator {
+
+    private Scanner input;
+
+    public int menu() {
+        input = new Scanner(System.in);
+        System.out.println("*-* MENU *-*");
+        System.out.println("1 - Addition");
+        System.out.println("2 - Subtraction");
+        System.out.println("3 - Multiplication");
+        System.out.println("4 - Division");
+        System.out.println("Operation: ");
+        int op = input.nextInt();
+        return op;
+    }
+
+    public float add(float n1, float n2) {
+        System.out.println("*-* ADD *-*");
+        float result = n1 + n2;
+        return result;
+    }
+
+    public float subtract(float n1, float n2) {
+        System.out.println("*-* SUBTRACT *-*");
+        return n1 - n2;
+    }
+
+    public float multiply(float n1, float n2) {
+        System.out.println("*-* MULTIPLY *-*");
+        return n1 * n2;
+    }
+
+    public float divide(float n1, float n2) {
+        System.out.println("*-* DIVIDE *-*");
+        return n1 / n2;
+    }
 }
+
